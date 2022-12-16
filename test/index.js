@@ -74,7 +74,7 @@ async function debug(config) {
         const { age, content } = trajectory;
         console.debug(
             `---------------------------------`,
-            `\n-- ${age} 岁\n   `,
+            `\n-- ${age} \n   `,
             content.map(
                 ({type, description, rate, name, postEvent}) => {
                     switch(type) {

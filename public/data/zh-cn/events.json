@@ -1,7 +1,7 @@
 {
     "10000": {
         "id": 10000,
-        "event": "你死了。",
+        "event": "The world loses a good one! Sorry, you are dead.",
         "effect": {
             "LIF": -1
         },
@@ -14,18 +14,18 @@
     },
     "10001": {
         "id": 10001,
-        "event": "你出生了，是个男孩。",
+        "event": "You are born! (a baby with testicles - T)",
         "exclude": "TLT?[1004,1024,1025,1113]"
     },
     "10002": {
         "id": 10002,
-        "event": "你出生了，是个女孩。",
+        "event": "You are born! (a baby with uterus - U)",
         "exclude": "TLT?[1003,1024,1025]"
     },
     "10003": {
         "id": 10003,
-        "event": "你生了场重病。",
-        "postEvent": "家里花了不少钱。",
+        "event": "You had a serious illness",
+        "postEvent": "Family spent a lot of money on medical treatment",
         "effect": {
             "MNY": -1,
             "SPR": -1
@@ -85,19 +85,19 @@
     },
     "10009": {
         "id": 10009,
-        "event": "你从小生活在农村",
+        "event": "You live in a beautiful countryside.",
         "include": "(MNY<8)|(TLT?[1012])",
         "exclude": "TLT?[1010,1013,1014]"
     },
     "10010": {
         "id": 10010,
-        "event": "你从小生活在城市",
+        "event": "You live in a fancy city.",
         "include": "(MNY>1)|(TLT?[1010,1013])",
         "exclude": "TLT?[1012,1014]"
     },
     "10011": {
         "id": 10011,
-        "event": "你出生在美利坚，拥有美国国籍",
+        "event": "You live in Nordic countries.",
         "grade": 2,
         "include": "(MNY>8)|(TLT?[1014])",
         "exclude": "TLT?[1010,1012]"
@@ -185,7 +185,7 @@
     },
     "10019": {
         "id": 10019,
-        "event": "你的父母对你视若珍宝，呵护备至。",
+        "event": "Your parents treat you like a treasure and take good care of you.",
         "grade": 1,
         "effect": {
             "STR": 1,
@@ -260,9 +260,9 @@
     },
     "10027": {
         "id": 10027,
-        "event": "你的母亲救了个人，得到了很多感谢金。",
+        "event": "Your mom has hit the jackpot.",
         "grade": 1,
-        "postEvent": "家境有所好转。",
+        "postEvent": "The family financial situation has improved.",
         "effect": {
             "MNY": 2,
             "SPR": 1
@@ -286,7 +286,7 @@
     },
     "10029": {
         "id": 10029,
-        "event": "家人从小就培养你做家务。",
+        "event": "Family help you develop a good habit to be clean and tidy.",
         "effect": {
             "STR": 1
         },
@@ -478,7 +478,7 @@
     },
     "10048": {
         "id": 10048,
-        "event": "你的绘画天赋好像不错。",
+        "event": "You have a gift for drawing.",
         "exclude": "EVT?[10048]",
         "branch": [
             "(EVT?[10009])&(CHR<3):20048"
@@ -494,7 +494,7 @@
     },
     "10050": {
         "id": 10050,
-        "event": "你的数学天赋好像不错。",
+        "event": "You have a gift for science",
         "include": "INT>8",
         "exclude": "EVT?[10050]"
     },
@@ -506,7 +506,7 @@
     },
     "10052": {
         "id": 10052,
-        "event": "你追得家里的动物鸡飞狗跳。",
+        "event": "You like to chase after your pets",
         "include": "(STR>3)&(EVT?[10009])",
         "exclude": "EVT?[10052]"
     },
@@ -571,7 +571,7 @@
     },
     "10059": {
         "id": 10059,
-        "event": "大旱灾，颗粒无收。",
+        "event": "Big drought, no harvest",
         "effect": {
             "MNY": -1
         },
@@ -634,7 +634,7 @@
     },
     "10065": {
         "id": 10065,
-        "event": "空气很新鲜，生活很健康。",
+        "event": "You live a good life with fresh air and beautiful view.",
         "effect": {
             "STR": 1
         },
@@ -667,7 +667,7 @@
     },
     "10069": {
         "id": 10069,
-        "event": "平平淡淡，没有什么特别的事。"
+        "event": "Nothing special happened."
     },
     "10070": {
         "id": 10070,
@@ -716,7 +716,7 @@
     },
     "10075": {
         "id": 10075,
-        "event": "你的运动天赋好像不错。",
+        "event": "You have a gift for sports",
         "include": "STR>8",
         "exclude": "EVT?[10075]",
         "branch": [
@@ -886,8 +886,8 @@
     },
     "10092": {
         "id": 10092,
-        "event": "你被一只蛇咬了。",
-        "postEvent": "还好没有毒。",
+        "event": "You've been bitten by a snake",
+        "postEvent": "Luckily it wasn't poisonous.",
         "include": "EVT?[10009]",
         "exclude": "EVT?[10092]",
         "branch": [
@@ -1032,7 +1032,7 @@
     },
     "10111": {
         "id": 10111,
-        "event": "你出生了，是极为罕见的双性人。",
+        "event": "You are born! (a baby with mixed sexual bio features X)",
         "grade": 2,
         "exclude": "TLT?[1003,1004,1025]"
     },
@@ -4253,7 +4253,7 @@
     },
     "10494": {
         "id": 10494,
-        "event": "体质过低，胎死腹中。",
+        "event": "Bad luck! You are dead before birth.",
         "grade": 1,
         "include": "STR<0",
         "exclude": "TLT?[1071]",
@@ -4292,13 +4292,13 @@
     },
     "10498": {
         "id": 10498,
-        "event": "父母经常带你去附近的公园和大学校园玩。",
+        "event": "Parents usually take you to parks and nearby campuses to hangout",
         "include": "(MNY>3)&(EVT?[10011])",
         "exclude": "EVT?[10498]"
     },
     "10499": {
         "id": 10499,
-        "event": "你喜欢在图书馆的儿童区和别的小朋友一起玩。",
+        "event": "You like to hangout with other kids in the park",
         "include": "(MNY>3)&(EVT?[10011])",
         "exclude": "EVT?[10499]"
     },
@@ -4310,32 +4310,32 @@
     },
     "10501": {
         "id": 10501,
-        "event": "父母开始用照片和日记记录下你的点点滴滴。",
+        "event": "Parents begin to record your moments in photos and videos.",
         "include": "EVT?[10011]",
         "exclude": "EVT?[10501]"
     },
     "10502": {
         "id": 10502,
-        "event": "家里很有钱，父母所有东西都为你准备最好的。",
+        "event": "Family is rich and parents prepare the best of everything for you.",
         "grade": 1,
         "include": "(MNY>7)&(EVT?[10011])",
         "exclude": "EVT?[10502]"
     },
     "10503": {
         "id": 10503,
-        "event": "家里很穷，但父母尽力为你准备更好的生活。",
+        "event": "The family is poor, but the parents try their best to prepare a better life for you.",
         "include": "(MNY<4)&(EVT?[10011])",
         "exclude": "EVT?[10503]"
     },
     "10504": {
         "id": 10504,
-        "event": "你开始上幼儿园。",
+        "event": "You start going to kindergarten",
         "include": "(MNY>3)&(EVT?[10011])",
         "exclude": "EVT?[10504]"
     },
     "10505": {
         "id": 10505,
-        "event": "你上不起幼儿园，父母开始教你学习。",
+        "event": "The family cannot afford the kindergarten tuition, govt provides financial support",
         "include": "(MNY<4)&(EVT?[10011])",
         "exclude": "EVT?[10505]"
     },
@@ -6651,13 +6651,13 @@
     },
     "10825": {
         "id": 10825,
-        "event": "你的家人给你买了很多玩具。",
+        "event": "You got a lot of toys",
         "include": "EVT?[10010]",
         "exclude": "EVT?[10825]"
     },
     "10826": {
         "id": 10826,
-        "event": "你的家人给你买了很多书。",
+        "event": "You got a lot of good foods",
         "include": "EVT?[10010]",
         "exclude": "EVT?[10826]"
     },

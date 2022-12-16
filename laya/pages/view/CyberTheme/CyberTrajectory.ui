@@ -983,7 +983,7 @@
                                                 },
                                                 {
                                                     "type":"Label",
-                                                    "props":{"x":1,"text":"岁","fontSize":50,"font":"方正像素12","color":"#cfea5c","anchorX":0},
+                                                    "props":{"x":1,"text":"","fontSize":50,"font":"方正像素12","color":"#cfea5c","anchorX":0},
                                                     "nodeParent":91,
                                                     "label":"Label",
                                                     "isDirectory":false,
