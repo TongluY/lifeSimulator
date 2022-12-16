@@ -13075,40 +13075,24 @@
         "effect": {
             "INT": 2,
             "SPR": 1
-        },
-        "include": "EVT?[40075]",
-        "exclude": "EVT?[40078,40084]"
+        }
     },
     "40078": {
         "id": 40078,
         "event": "But basically the idea of this game has already shown.",
-        "grade": 2,
-        "include": "(EVT?[40063])&(INT>500)",
-        "exclude": "EVT?[40078,40084]"
+        "grade": 2
     },
     "40079": {
         "id": 40079,
-        "event": "Now you can close your window, see you next time!",
-        "include": "EVT?[40078]",
-        "exclude": "EVT?[40083,40084]"
+        "event": "Now you can close your window, see you next time!"
     },
     "40080": {
         "id": 40080,
-        "event": "Don't click me again, please, thanks!",
-        "include": "EVT?[40079]",
-        "exclude": "EVT?[40083,40084]",
-        "branch": [
-            "EVT?[40078]:10000"
-        ]
+        "event": "Don't click me again, please, thanks!"
     },
     "40081": {
         "id": 40081,
-        "event": "The following part will be Chinese version, so you'd better refresh the window again!",
-        "include": "EVT?[40079]",
-        "exclude": "EVT?[40083,40084]",
-        "branch": [
-            "EVT?[40078]:10000"
-        ]
+        "event": "The following part will be Chinese version, so you'd better refresh the window again!"
     },
     "40082": {
         "id": 40082,
